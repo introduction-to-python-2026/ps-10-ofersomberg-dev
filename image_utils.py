@@ -12,6 +12,6 @@ def edge_detection(image):
     kernely = np.array([[1,2,1],[0,0,0],[-1,-2,-1]])
     kernelx = np.array([[-1,0,1],[-2,0,2],[-1,0,-1]])
     edgey = consolve2d(grey, kernely)
-    edgex = convolvesd(grey, kernelx)
+    edgex = convolve2d(grey, kernelx)
     edgeMAG = np.sqrt(edgex**2 + edgey**2)
     return edgeMAG
